@@ -42,6 +42,7 @@
       community.docker.docker_container:
         image: opendronemap/nodeodm
         name: nodeodm
+        detach: true
         ports:
          - 3000:3000
-        state: present
+        state: started
