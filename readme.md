@@ -10,6 +10,6 @@ packages:
   - git
   - ansible
 runcmd:
- - [ sh, -c, echo "========= cloud-init-demo -- webserver =========" ]
+ - [ sh, -c, echo "========= cloud-init -- odmworker =========" ]
  - ansible-pull -U https://github.com/commandnet/ansible-playbooks -d /opt/org/repo odm-worker.yml
 ```
