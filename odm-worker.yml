@@ -3,7 +3,7 @@
   connection: local
   become: true
   tasks:
-     - name: Install aptitude
+    - name: Install aptitude
       apt:
         name: aptitude
         state: latest
