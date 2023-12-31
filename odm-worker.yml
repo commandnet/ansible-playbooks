@@ -38,6 +38,9 @@
         state: latest
         update_cache: true
 
-    - name: Install Docker Module for Python
-      pip:
-        name: docker  
+    - name: run odm container
+      community.docker.docker_container:
+        image: opendronemap/nodeodm
+        ports:
+         - 3000:3000
+        state: present
