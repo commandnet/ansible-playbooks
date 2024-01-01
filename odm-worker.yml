@@ -40,7 +40,7 @@
 
     - name: run odm container
       community.docker.docker_container:
-        image: opendronemap/nodeodm
+        image: opendronemap/nodemicmac
         name: nodeodm
         detach: true
         ports:
